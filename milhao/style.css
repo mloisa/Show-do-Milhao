@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  & img {
+    height: 240px;
+  }
+}
+body {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(155deg, #69e0d5 0%, #2da694 50%, #236b78 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  & img {
+    width: 500px;
+  }
+  overflow-x: hidden;
+}
+.premio {
+  display: flex;
+  font-size: 1.7rem;
+  text-align: center;
+  align-items: center;
+  color: #d4af37;
+  font-weight: bold;
+   filter: drop-shadow(0 0 6px #0c8b7f);
+  & #moedasIcon {
+    height: 40px;
+    width: 40px;
+  }
+}
+main {
+  width: 800px;
+  padding: 12px;
+  border-radius: 30px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ #comecar, #tentarNovamente{
+    width: 220px;
+    border: solid 2px rgba(11, 78, 70, 1);
+    border-radius: 18px;
+    font-size: 2rem;
+    padding: 4px;
+    background: #f7d177;
+    background: linear-gradient(
+      90deg,
+      rgba(247, 209, 119, 1) 0%,
+      rgba(191, 147, 25, 1) 50%,
+      rgba(247, 209, 119, 1) 100%
+    );
+    border: solid 2px #f7d177;
+    color: #fffaee;
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.6s ease;
+
+    font-weight: bold;
+  }
+  & #comecar:hover, #tentarNovamente:hover{
+    border: solid 2px #f7d177;
+    color: #fffaee;
+    background-position: right;
+    transform: scale(1.1);
+  }
+  & #comecar:active, #tentarNovamente:hover{
+    transform: scale(1);
+  }
+.outros {
+  button {
+    background: #ffd700;
+    border: solid 2px #f7d177;
+    color: #ffffff;
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.6s ease;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px;
+  }
+}
+.tempocont{
+  width: 400px;
+  display:flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+#pergunta{
+  background-color: #f9f9f9;
+  border-left: 8px solid #3eefce; /* um detalhe azul na lateral */
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#proximo {
+  img {
+    width: 70px;
+    height: 60px;
+    transition: all 0.3s ease;
+  }
+}
+#proximo:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+#pedirDica {
+  img {
+    width: 50px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+}
+#pedirDica:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+.opcoes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+  flex-direction: column;
+  & button {
+    background-color: #034d3e;
+    color: #3eefce;
+    border: solid 4px #3eefce;
+    border-radius: 35px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 500px;
+    margin: 4px;
+    transition: all 0.3s ease;
+  }
+  & button:hover {
+    color: #034d3e;
+    background-color: #3eefce;
+  }
+}
+.outros {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 500px;
+  margin: 4px;
+  letter-spacing: 10px;
+  & button {
+    padding: 5px;
+    color: #ffffff;
+    border-color: #fffaee;
+  }
+  & button:hover {
+    border: solid 2px #f7d177;
+    color: #fffaee;
+    background-position: right;
+    transform: scale(1.1);
+  }
+}
+#tentarNovamente{
+  background-color: #DAA520;
+  border: none;
+}
+.resultado {
+  font-family: "Limelight", sans-serif;
+}
+

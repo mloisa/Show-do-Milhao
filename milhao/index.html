@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/pt/b/b2/Show_do_Milh%C3%A3o_Logo_2024.webp"
+        alt="Logotipo"
+      />
+    </header>
+    <main>
+      <button onclick="start()" id="comecar">Jogar</button>
+      <div class="premio">
+        <p id="moedasIcon" style="display: none;">🪙</p>
+        <p id="moedasValor" style="display: none">0</p>
+      </div>
+      <div class="tempocont">
+      <p id="contadorPergunta"></p>
+      <div id="mostraTempo"></div>
+      </div>
+      <div id="pergunta" style="display: none"></div>
+      <div class="opcoes" id="opcoes" style="display: none"></div>
+      <p id="mostraDica"></p>
+      <div class="outros">
+        <div id="pedirDica" style="display: none">
+          <img src="Imagens/dicadica.png" alt="Dica" />
+        </div>
+        <div id="proximo" style="display: none">
+          <img src="Imagens/next.png" alt="" />
+        </div>
+        <img
+        src="https://pbs.twimg.com/media/BbS48tuCYAEMMJH.jpg:large"
+        alt="imagem"
+        style="display: none"
+        id="ganhou"
+      />
+        <button onclick="retry()" id="tentarNovamente" style="display: none">
+          Tentar novamente
+        </button>
+      </div>
+      <div id="resultado" style="display: none"></div>
+      <img
+        id="sucesso"
+        src="https://mgapress.com.br/blog/wp-content/uploads/2017/03/silvio-santos-caracteristicas-de-empreendedor.jpg"
+        alt="correto"
+        style="display: none"
+      />
+      <img
+        id="nojo"
+        src="https://i.ytimg.com/vi/kLwfe_-T4PA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBaCbcMbADySnoDdGDPDBGxC8E7pw"
+        alt="errado"
+        style="display: none"
+      />
+      <div id="exibirDica" style="display: none"></div>
+    </main>
+    <audio src="audios/perguntashowdomilhao.mp3" id="perguntaAudio"></audio>
+    <audio src="audios/errou-show-do-milhao.mp3" id="errou"></audio>
+    <audio src="audios/certa-resposta-show-do-milhao.mp3" id="acertou"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
